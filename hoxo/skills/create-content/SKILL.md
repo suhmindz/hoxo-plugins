@@ -10,7 +10,7 @@ Read `config.md` first to get `client_name`. If missing, ask: "What's your name?
 Draft LinkedIn content in the client's voice. Read context first, then ask which mode.
 
 **Read before starting:**
-- `icp/*.md` — ICP (audience + pain points)
+- `get_icp` (Hoxo connector) — ICP (audience + pain points), pulled live
 - `voice-samples/` — all files (tone, structure, hooks)
 
 **MCP call:** `get_post_performance` with `days=30` — to know what's currently working

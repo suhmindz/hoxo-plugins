@@ -8,7 +8,7 @@ description: "Find podcast guests or prep for a booked guest. Two modes: Find (p
 Read `config.md` first to get `client_name`. If missing, ask: "What's your name?"
 
 **Read before starting:**
-- `icp/*.md` — ICP (to filter guest quality)
+- `get_icp` (Hoxo connector) — ICP (to filter guest quality), pulled live
 - `PODCAST-FLYER.md` — show name, format, audience, themes
 - `PODCAST-GUEST-PROFILE.md` — ideal guest type, past guests, what makes a great fit
 

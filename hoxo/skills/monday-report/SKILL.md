@@ -24,4 +24,4 @@ Suggested flow:
 5. Present **Performance Lens** — "Here's what worked last week and why."
 6. Present **Daily Orchestrator** — "And here's who engaged with your content yesterday — these are the warmest leads right now."
 
-If they want to act immediately (e.g. "write the first post", "send this outreach DM"), do it using their voice from `voice-samples/` and ICP from `icp/*.md`.
+If they want to act immediately (e.g. "write the first post", "send this outreach DM"), do it using their voice from `voice-samples/` and ICP from `get_icp` (Hoxo connector).
