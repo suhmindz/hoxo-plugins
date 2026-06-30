@@ -1,6 +1,6 @@
 ---
 name: create-content
-description: "Draft LinkedIn posts in the client's voice. On-demand. 4 modes: Ideation (5 ideas from ICP + what's performing), Draft new (from a story or prompt), Repurpose (refresh an old post), Shop-window (sector-authority piece). Reads ICP and voice vault. Use when the user says /create-content, 'write a post', 'content ideas', 'draft post', 'repurpose', 'shop window post', or asks to create any LinkedIn content."
+description: "Draft LinkedIn posts in the client's voice. On-demand. 4 modes: Ideation (5 ideas from ICP + what's performing), Draft new (from a story or prompt), Repurpose (refresh an old post), Shop-window (sector-authority piece). Reads ICP (live) and voice vault. Use when the user says /create-content, 'write a post', 'write a LinkedIn post', 'content ideas', 'post idea', 'draft post', 'rewrite my post', 'repurpose', 'shop window post', or asks to create any LinkedIn content."
 ---
 
 # /create-content
