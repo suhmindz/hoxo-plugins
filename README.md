@@ -24,12 +24,17 @@ hoxo/
 
 ## Maintaining
 
-Skills are canonical in `hoxo-boardroom-skill-pack`. After editing them, re-sync and
-bump `hoxo/.claude-plugin/plugin.json` `version`:
+The plugin's skills are **thin stubs** — each just calls `get_skill_instructions` on the
+Hoxo connector and follows what comes back. The real skill bodies live server-side (the
+MCP serves them from `hoxo-boardroom-skill-pack`, the canonical source). So:
 
-```
-node scripts/sync-skills.mjs
-```
+- **Editing a skill's body** → just deploy the MCP server. Clients get it live, **no plugin
+  update needed** (this sidesteps the marketplace cache/pinning that strands updates).
+- **Adding/removing a skill, or changing its name/description** → re-stub and republish:
+  ```
+  node scripts/sync-skills.mjs            # regenerate stubs from the skill-pack
+  # bump hoxo/.claude-plugin/plugin.json "version", then push
+  ```
 
 The connector URL lives in `hoxo/.mcp.json` (prod, multi-tenant — OAuth identifies the
 client, so one URL serves everyone).
