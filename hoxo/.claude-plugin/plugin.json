@@ -1,6 +1,6 @@
 {
   "name": "hoxo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Your Hoxo BD engine inside Claude — bundles the Hoxo connector and 7 skills as slash commands.",
   "author": {
     "name": "Hoxo"

@@ -13,7 +13,7 @@ The DM should feel like it took 5 minutes to write but 20 minutes to think.
 Read `config.md` first to get `client_name`. If missing, ask: "What's your name?"
 
 **Read before starting:**
-- `icp/*.md` — framing for the message
+- `get_icp` (Hoxo connector) — framing for the message, pulled live
 - `voice-samples/` — tone and structure
 
 ---

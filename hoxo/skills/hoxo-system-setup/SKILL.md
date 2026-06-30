@@ -11,26 +11,27 @@ Run this once with the ClaudeBrain folder selected in CoWork. Takes about 10 min
 
 ## Step 1: Config
 
-Check if `config.md` exists and has `client_name` and `mcp_url`.
+Check if `config.md` exists and has `client_name`.
 
 If missing, ask:
 
-> Welcome — let's get your ClaudeBrain set up. I need two things:
-> 1. Your full name (e.g. "Kevin Jarvis")
-> 2. Your Hoxo MCP URL — your Hoxo contact will have sent this
+> Welcome — let's set up your Hoxo workspace. What's your full name? (e.g. "Kevin Jarvis")
 
 Write `config.md`:
 ```
-# ClaudeBrain Config
+# Hoxo Config
 client_name: [Full Name]
-mcp_url: [MCP URL]
 ```
+
+The Hoxo connector is already wired by the plugin — there's no URL to enter.
 
 ---
 
 ## Step 2: Create folders
 
-Create any missing folders: `icp/`, `dream-100/`, `voice-samples/`, `transcripts/`, `learning/`
+Create any missing folders: `voice-samples/`, `transcripts/`, `learning/`
+
+No `icp/` or `dream-100/` folders — your ICP and Dream 100 live in Hoxo and are pulled live through the connector whenever a skill needs them, so they're always current.
 
 Write podcast stubs if missing:
 - `PODCAST-FLYER.md` → `# Podcast Flyer — paste your show one-pager here`
@@ -38,22 +39,15 @@ Write podcast stubs if missing:
 
 ---
 
-## Step 3: Pull your data from Hoxo
+## Step 3: Check the Hoxo connector
 
-Call in parallel:
-- `get_icp` → save to `icp/icp.md`
-- `get_dream100` → save as markdown table to `dream-100/dream-100.md`
+Call `get_icp` to confirm the connector is live. **Don't save it** — your ICP and Dream 100 stay in Hoxo and skills pull them live on demand (always current, nothing to keep in sync locally).
 
-Format Dream 100 as:
-```
-# Dream 100
+If the call fails:
+> "Couldn't reach Hoxo — make sure the Hoxo plugin is installed and you've signed in to the connector, then try again."
 
-| # | Name | Title | Company | LinkedIn | Match |
-|---|------|-------|---------|----------|-------|
-```
-
-If either call fails:
-> "Couldn't load your [ICP / Dream 100] — make sure your Hoxo connector is added in Claude Desktop settings and try again."
+If it succeeds:
+> "Connector's live — I can see your ICP. ✓"
 
 ---
 
