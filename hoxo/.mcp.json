@@ -2,7 +2,7 @@
   "mcpServers": {
     "hoxo": {
       "type": "http",
-      "url": "https://hoxo-mcp.onrender.com/mcp"
+      "url": "https://hoxo-mcp.automindz.app/mcp"
     }
   }
 }
